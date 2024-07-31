@@ -1,1 +1,5 @@
-Back end for Front End course in Front End Masters.
+# Agus website!
+
+# Tech stack
+
+React TS Vite Tailwind Shadcn
