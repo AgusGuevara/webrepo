@@ -1,10 +1,9 @@
 import './App.css'
 
 function App() {
-
     return (
         <>
-            <p>
+            <p className='text-3xl font-bold underline'>
                 aguswebsiteaguswebsiteaguswebsite
             </p>
         </>
