@@ -1,7 +1,9 @@
 import profile from '@/assets/images/profile.jpg'
 
 const ProfilePicture = () => {
-    return <img src={profile} className='absolute bottom-0 block w-auto h-auto grayscale'></img>
+    return <div className='absolute w-[305px] h-auto bottom-0'>
+        <img src={profile} className='grayscale'></img>
+    </div>
 }
 
 export default ProfilePicture
