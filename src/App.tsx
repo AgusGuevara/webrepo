@@ -1,12 +1,10 @@
-import './App.css'
+import AvatarSideSection from './components/main/AvatarSideSection'
 
 function App() {
     return (
-        <>
-            <p className='text-3xl font-bold underline'>
-                aguswebsiteaguswebsiteaguswebsite
-            </p>
-        </>
+        <section className='flex'>
+            <AvatarSideSection />
+        </section>
     )
 }
 
