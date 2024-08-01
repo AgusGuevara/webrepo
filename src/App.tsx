@@ -1,4 +1,5 @@
 import AvatarSideSection from './components/main/AvatarSideSection'
+import '@/styles/globals.css'
 
 function App() {
     return (
