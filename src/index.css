@@ -2,7 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+@layer base {
+    @font-face {
+      font-family: 'HomeVideo';
+      src: local('HomeVideo'),
+      url('./assets/fonts/HomeVideo.ttf') format("truetype");
+    }
+  }
+
+  :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -28,8 +36,7 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
+  padding: 0;
   min-width: 320px;
   min-height: 100vh;
 }
