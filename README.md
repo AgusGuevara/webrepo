@@ -1,6 +1,6 @@
 # Welcome to my personal web page repo.
 
-# English :
+# English 
 
 With the goal in mind of expanding my work and knowlege horizons, I decided to create this webpage. I took this opportunity to utilize new and challenging techonlogies that I haven't used before.
 
