@@ -1,12 +1,12 @@
-import AvatarSideSection from './components/main/AvatarSideSection'
-import '@/styles/globals.css'
+import AvatarSideSection from "./components/main/AvatarSideSection";
+import "@/styles/globals.css";
 
 function App() {
     return (
-        <section className='flex h-screen p-3'>
+        <section className="flex w-screen h-screen p-4">
             <AvatarSideSection />
         </section>
-    )
+    );
 }
 
-export default App
+export default App;

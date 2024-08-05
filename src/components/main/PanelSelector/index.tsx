@@ -1,20 +1,37 @@
-import {
-    ToggleGroup,
-    ToggleGroupItem,
-} from "@/components/ui/toggle-group"
+import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
+import { avatarButtons } from "@/config/buttons";
+import { FC } from "react";
 
-export const PanelSelector = () => {
-    const btnStyling = 'text-white font-homeVideo'
-    return (
-        <div className="absolute top-[250px] left-[0]">
-            <ToggleGroup className="flex w-[100px] h-[150px] flex-wrap gap-3 justify-between" type="single" >
-                <ToggleGroupItem className={btnStyling} value="work" aria-label="See agus work experience">Work</ToggleGroupItem>
-                <ToggleGroupItem className={btnStyling} value="personal" aria-label="See agus work style">Personal</ToggleGroupItem>
-                <ToggleGroupItem className={btnStyling} value="jeje" aria-label="See agus jeje">Contact</ToggleGroupItem>
-                <ToggleGroupItem className={btnStyling} value="not jeje" aria-label="See agus not jeje">Workin on</ToggleGroupItem>
-            </ToggleGroup>
-        </div>
-    )
+interface Props {
+    activeOption(value: string): void;
 }
 
-export default PanelSelector
+export const PanelSelector: FC<Props> = ({ activeOption }) => {
+    const btnStyling = "text-white font-homeVideo";
+
+    const handleClick = (value: string) => {
+        return activeOption(value);
+    };
+
+    return (
+        <ToggleGroup
+            className="flex flex-wrap justify-between w-1/4 gap-3 h-1/3"
+            type="single"
+            defaultValue="work"
+        >
+            {avatarButtons.map(({ label, value }) => (
+                <ToggleGroupItem
+                    key={value}
+                    className={btnStyling}
+                    value={value}
+                    aria-label="See agus work experience"
+                    onClick={() => handleClick(value)}
+                >
+                    {label}
+                </ToggleGroupItem>
+            ))}
+        </ToggleGroup>
+    );
+};
+
+export default PanelSelector;
