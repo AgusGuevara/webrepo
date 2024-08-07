@@ -1,6 +1,7 @@
 import { FC } from "react";
 import Work from "../Content/Work";
 import Tools from "../Content/Tools";
+import About from "../Content/About";
 
 interface Props {
     panel: string;
@@ -14,7 +15,7 @@ const renderBasedOnPanel = (panel: string): JSX.Element => {
         case "tools":
             return <Tools />;
         case "about":
-            return <div>about</div>;
+            return <About />;
         case "contact":
             return <div>contact</div>;
 
