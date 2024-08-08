@@ -1,13 +1,13 @@
-import path from "path"
-import react from "@vitejs/plugin-react"
-import { defineConfig } from "vite"
+import path from "path";
+import react from "@vitejs/plugin-react";
+import { defineConfig } from "vite";
 
 export default defineConfig({
     plugins: [react()],
-    base: 'https://agusguevara.github.io/webrepo',
+    base: "https://agusguevara.github.io/website",
     resolve: {
         alias: {
             "@": path.resolve(__dirname, "./src"),
         },
     },
-})
+});
