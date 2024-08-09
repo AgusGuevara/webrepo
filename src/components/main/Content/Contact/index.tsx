@@ -15,6 +15,8 @@ import emailjs from "@emailjs/browser";
 import { useRef, useState } from "react";
 import { Toaster } from "@/components/ui/sonner";
 import { toast } from "sonner";
+import { DownloadIcon } from "lucide-react";
+import cvfile from "@/assets/files/Agustin-Thomas-Guevara-CV.pdf";
 
 const formSchema = z.object({
     user_name: z.string(),
@@ -148,6 +150,18 @@ function Contact() {
                     </Button>
                 </form>
             </Form>
+            <a download="Agustin-Thomas-Guevara.pdf" href={cvfile}>
+                <Button
+                    type="submit"
+                    className="w-full font-homeVideo bg-red-600"
+                    disabled={disableEmail}
+                >
+                    <span>Grab a CV copy!</span>
+                    <span className="pl-2 w-3">
+                        <DownloadIcon />
+                    </span>
+                </Button>
+            </a>
             <Toaster />
         </div>
     );
