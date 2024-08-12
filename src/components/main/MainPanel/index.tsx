@@ -25,7 +25,7 @@ const renderBasedOnPanel = (panel: string): JSX.Element => {
 
 const MainPanel: FC<Props> = ({ panel }) => {
     return (
-        <div className="flex justify-center w-full h-full p-4 align-middle">
+        <div className="flex flex-row justify-center h-full w-full items-center p-4 order-2">
             {renderBasedOnPanel(panel)}
         </div>
     );

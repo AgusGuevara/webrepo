@@ -3,7 +3,7 @@ import "@/styles/globals.css";
 
 function App() {
     return (
-        <section className="flex w-screen h-screen p-4">
+        <section className="p-2 lg:p-4 min-h-screen w-screen lg:h-screen">
             <AvatarSideSection />
         </section>
     );

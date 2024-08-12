@@ -10,7 +10,7 @@ const Work = () => {
     return (
         <Accordion
             type="multiple"
-            className="self-center w-full pb-32 text-lg font-homeVideo text-slate-200"
+            className="text-lg font-homeVideo text-slate-200 w-full"
         >
             {jobs.map(({ date, company, type, info }, idx) => (
                 <AccordionItem value={`item-${idx}`} key={idx}>

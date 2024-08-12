@@ -15,7 +15,7 @@ export const PanelSelector: FC<Props> = ({ activeOption }) => {
 
     return (
         <ToggleGroup
-            className="flex flex-wrap justify-between w-1/4 gap-3 h-1/3"
+            className="flex flex-wrap justify-between md:w-1/4 gap-3 md:order-2 order-3 w-full h-1/3"
             type="single"
             defaultValue="work"
         >
