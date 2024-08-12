@@ -12,15 +12,16 @@ function AvatarSideSection() {
     }, []);
 
     return (
-        <div className="flex w-full h-full" role="sidebar-avatar">
-            <div className="flex flex-col justify-between w-1/4">
+        <div
+            className="flex flex-col h-full md:flex-row md:min-h-fit"
+            role="sidebar-avatar"
+        >
+            <div className="flex flex-wrap justify-between md:w-[250px] md:flex-col lg:w-1/4 order-1 lg:flex-nowrap h-full">
                 <Title />
                 <PanelSelector activeOption={retrieveActivePanel} />
                 <ProfilePicture />
             </div>
-            <div className="w-3/4">
-                <MainPanel panel={activePanel} />
-            </div>
+            <MainPanel panel={activePanel} />
         </div>
     );
 }

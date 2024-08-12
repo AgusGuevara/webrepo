@@ -3,21 +3,21 @@ import React from "react";
 
 const Tools = () => {
     return (
-        <div className="flex flex-row w-full gap-24">
+        <div className="flex flex-row w-full lg:h-[95%] h-auto gap-2 overflow-scroll lg:overflow-hidden">
             {tools.map(({ label, nodes }) => (
-                <div className="h-full w-full p-2">
+                <div className="max-h-full w-full p-2">
                     <div className="pb-4">
                         <h1 className="font-homeVideo">{label}</h1>
                     </div>
                     <div
-                        className="flex flex-col flex-wrap justify-start gap-4"
+                        className="flex flex-col justify-start gap-4 lg:h-full overflow-scroll lg:overflow-hidden"
                         key={label}
                     >
                         {nodes.map(
                             ({ toolname, toolcomponent, experience }) => (
                                 <div
                                     key={toolname}
-                                    className="flex flex-row justify-start content-center w-[95%] gap-2 p-3 bg-gray-200 rounded-md"
+                                    className="flex flex-row justify-start content-center w-[95%] h-[50px] lg:h-auto gap-2 p-3 bg-gray-200 rounded-md"
                                 >
                                     <span>
                                         {React.cloneElement(toolcomponent, {

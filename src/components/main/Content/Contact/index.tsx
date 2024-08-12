@@ -58,7 +58,7 @@ function Contact() {
     };
 
     return (
-        <div className="flex flex-col gap-5 bg-white rounded-md w-1/2 h-[75%] self-center p-4">
+        <div className="flex flex-col gap-5 bg-white rounded-md lg:w-1/2 lg:h-[75%] self-center p-4">
             <h1 className="font-homeVideo text-black">Contact Me!</h1>
             <p className="font-homeVideo text-black">
                 Need a Front End Developer?,contact me through{" "}
