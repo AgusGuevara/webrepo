@@ -5,7 +5,7 @@
 Having the opportunity to do some coding, I've decided to add stuff I haven't worked with before.
 
 - Typescript!!
-- Vite + Shadcn components
+- Vite + Shadcn/Radix components
 - Tailwind
 - Zod + React hook form
 
@@ -14,12 +14,12 @@ Todo
 
 # Spanish
 
-Aprovechando que tengo la oportunidad de hacer algo de codigo fuera de lo laboral, aproveche y meti cosas que todavia no use
+Aprovechando que tengo la oportunidad de hacer algo de codigo fuera de lo laboral, aproveche y meti cosas que todavia no use.
 
-- Typescript
+- Typescript!!
 - Vite + componentes de Shadcn/Radix
 - Tailwindcss
-- talves meter una back y un db para parrafos e imagenes
+- Zod + React hook form
 
 Todo
 - hostear assets y textos en backend
