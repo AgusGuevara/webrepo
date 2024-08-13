@@ -12,7 +12,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import emailjs from "@emailjs/browser";
-import { useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import { Toaster } from "@/components/ui/sonner";
 import { toast } from "sonner";
 import { DownloadIcon } from "lucide-react";
@@ -24,7 +24,7 @@ const formSchema = z.object({
     message: z.string().max(1000).min(5),
 });
 
-function Contact() {
+const Contact: React.FC = () => {
     const formRef = useRef(null);
     const [disableEmail, setDisableEmail] = useState(false);
 
@@ -35,7 +35,7 @@ function Contact() {
         },
     });
 
-    const handleSubmit = () => {
+    const handleSubmit = (): Promise<void> => {
         return emailjs
             .sendForm(
                 "service_wprwqmp",
@@ -58,7 +58,7 @@ function Contact() {
     };
 
     return (
-        <div className="flex flex-col gap-5 bg-white rounded-md lg:w-1/2 lg:h-[75%] self-center p-4">
+        <div className="flex flex-col gap-5 bg-white rounded-md self-center p-4 lg:w-1/2 lg:h-[75%]">
             <h1 className="font-homeVideo text-black">Contact Me!</h1>
             <p className="font-homeVideo text-black">
                 Need a Front End Developer?,contact me through{" "}
@@ -88,8 +88,12 @@ function Contact() {
                         render={({ field }) => {
                             return (
                                 <FormItem className="h-1/3">
-                                    <FormLabel className="font-homeVideo">
-                                        Full Name
+                                    <FormLabel
+                                        className="font-homeVideo"
+                                        htmlFor="user_name"
+                                        asChild
+                                    >
+                                        <legend>Full Name</legend>
                                     </FormLabel>
                                     <FormMessage />
                                     <Input
@@ -108,8 +112,12 @@ function Contact() {
                         render={({ field }) => {
                             return (
                                 <FormItem className="h-1/3 ">
-                                    <FormLabel className="font-homeVideo">
-                                        Email address
+                                    <FormLabel
+                                        className="font-homeVideo"
+                                        htmlFor="user_email"
+                                        asChild
+                                    >
+                                        <legend>Email address</legend>
                                     </FormLabel>
                                     <FormMessage />
                                     <Input
@@ -128,8 +136,12 @@ function Contact() {
                         render={({ field }) => {
                             return (
                                 <FormItem className="h-full">
-                                    <FormLabel className="font-homeVideo">
-                                        Your email
+                                    <FormLabel
+                                        className="font-homeVideo"
+                                        htmlFor="message"
+                                        asChild
+                                    >
+                                        <legend>Your email</legend>
                                     </FormLabel>
                                     <FormMessage />
                                     <Textarea
@@ -165,6 +177,6 @@ function Contact() {
             <Toaster />
         </div>
     );
-}
+};
 
 export default Contact;

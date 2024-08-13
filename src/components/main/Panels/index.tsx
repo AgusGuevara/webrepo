@@ -4,26 +4,23 @@ import Title from "../Title";
 import PanelSelector from "../PanelSelector";
 import MainPanel from "../MainPanel";
 
-function AvatarSideSection() {
+const Panels: React.FC = () => {
     const [activePanel, setActivePanel] = useState("work");
 
     const retrieveActivePanel = useCallback((panel: string) => {
-        setActivePanel(panel);
+        return setActivePanel(panel);
     }, []);
 
     return (
-        <div
-            className="flex flex-col h-full md:flex-row md:min-h-fit"
-            role="sidebar-avatar"
-        >
-            <div className="flex flex-wrap justify-between md:w-[250px] md:flex-col lg:w-1/4 order-1 lg:flex-nowrap h-full">
+        <>
+            <div className="flex flex-wrap justify-between h-full order-1 lg:w-1/4 lg:flex-nowrap lg:flex-col">
                 <Title />
                 <PanelSelector activeOption={retrieveActivePanel} />
                 <ProfilePicture />
             </div>
             <MainPanel panel={activePanel} />
-        </div>
+        </>
     );
-}
+};
 
-export default AvatarSideSection;
+export default Panels;

@@ -6,7 +6,7 @@ import {
 } from "@/components/ui/accordion";
 import { jobs } from "@/data/paragraphs";
 
-const Work = () => {
+const Work: React.FC = () => {
     return (
         <Accordion
             type="multiple"
