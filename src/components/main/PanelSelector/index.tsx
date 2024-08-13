@@ -9,13 +9,9 @@ interface Props {
 export const PanelSelector: FC<Props> = ({ activeOption }) => {
     const btnStyling = "text-white font-homeVideo";
 
-    const handleClick = (value: string) => {
-        return activeOption(value);
-    };
-
     return (
         <ToggleGroup
-            className="flex flex-wrap justify-between md:w-1/4 gap-3 md:order-2 order-3 w-full h-1/3"
+            className="flex flex-wrap justify-between gap-3 order-3 w-full h-1/3 md:w-1/4 md:order-2"
             type="single"
             defaultValue="work"
         >
@@ -24,8 +20,8 @@ export const PanelSelector: FC<Props> = ({ activeOption }) => {
                     key={value}
                     className={btnStyling}
                     value={value}
-                    aria-label="See agus work experience"
-                    onClick={() => handleClick(value)}
+                    aria-label="work-experience"
+                    onClick={() => activeOption(value)}
                 >
                     {label}
                 </ToggleGroupItem>

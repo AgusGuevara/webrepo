@@ -13,11 +13,12 @@ type jobs = {
 };
 
 type about = {
-    personal: [{ text: string; title: string }];
-    carreer: [{ text: string; title: string }];
-    honorableMentions: [
-        { text: string; list: { text: string; link: string; icon?: string }[] }
-    ];
+    personal: { text: string; title: string };
+    carreer: { text: string; title: string };
+    honorableMentions: {
+        text: string;
+        list: { text: string; link: string; icon?: string }[];
+    };
 };
 
 export const jobs: jobs[] = [
@@ -44,55 +45,49 @@ export const jobs: jobs[] = [
 
 export const about: about[] = [
     {
-        personal: [
-            {
-                text: "Hi Hello 👋, im Agustin, a Front End Developer based in Capital Federal, Buenos Aires, Argentina. Im 27 y/o as of today. I enjoy writing readable, solid, and undestandable software, make designed aligned UI's with a keen attention to detail and user experience, working with dynamic and efficient teams. On a personal level, a team that I can share beers 🍻 with, talk about personal stuff, and also them be able to give me constructive and assertive feedback is my Nirvana. I also am, very passionate about football ⚽, videogames 🎮, music 🎵.",
-                title: "Personal",
-            },
-        ],
-        carreer: [
-            {
-                text: "My story with software development and programming started in 2018 when working as a stock clerk found that I didn't wanted to work as a stock clerk for the rest of my life, and since I've always had interest in knowing how a mobile / desktop application works. Thats when I've started investigating in the internet, and eventually found a resource that till today, Im still using, freecodecamp.org 🔥 . With freecodecamp I've started the 'Responsive Web Design' curriculum. After sometime, I've found Plataforma 5, and took the Intro to Front End and Intro to Backend development courses. Got them done, and after like 1-2 months of continuing learing by myself, I took a Front End Development With React, in CouseIT, this took 6 months. At the end of this course, I've got a Job Offer at Cognizant Softvision 🍾.",
-                title: "Carreer & and how I got into tech",
-            },
-        ],
-        honorableMentions: [
-            {
-                text: "Wanted to give a shout to all the resources I'ved used, and till today I'm still using.",
-                list: [
-                    {
-                        text: "FreeCodeCamp",
-                        link: "https://freecodecamp.org/",
-                        icon: freeCodeCamp,
-                    },
+        personal: {
+            text: "Hi Hello 👋, im Agustin, a Front End Developer based in Capital Federal, Buenos Aires, Argentina. Im 27 y/o as of today. I enjoy writing readable, solid, and undestandable software, make designed aligned UI's with a keen attention to detail and user experience, working with dynamic and efficient teams. On a personal level, a team that I can share beers 🍻 with, talk about personal stuff, and also them be able to give me constructive and assertive feedback is my Nirvana. I also am, very passionate about football ⚽, videogames 🎮, music 🎵.",
+            title: "Personal",
+        },
+        carreer: {
+            text: "My story with software development and programming started in 2018 when working as a stock clerk found that I didn't wanted to work as a stock clerk for the rest of my life, and since I've always had interest in knowing how a mobile / desktop application works. Thats when I've started investigating in the internet, and eventually found a resource that till today, Im still using, freecodecamp.org 🔥 . With freecodecamp I've started the 'Responsive Web Design' curriculum. After sometime, I've found Plataforma 5, and took the Intro to Front End and Intro to Backend development courses. Got them done, and after like 1-2 months of continuing learing by myself, I took a Front End Development With React, in CouseIT, this took 6 months. At the end of this course, I've got a Job Offer at Cognizant Softvision 🍾.",
+            title: "Carreer & and how I got into tech",
+        },
+        honorableMentions: {
+            text: "Wanted to give a shout to all the resources I'ved used, and till today I'm still using.",
+            list: [
+                {
+                    text: "FreeCodeCamp",
+                    link: "https://freecodecamp.org/",
+                    icon: freeCodeCamp,
+                },
 
-                    {
-                        text: "Front End Masters",
-                        link: "https://frontendmasters.com/",
-                        icon: fem,
-                    },
-                    {
-                        text: "CourseIt (Rip)",
-                        link: "https://www.instagram.com/courseitok/?hl=es-la",
-                        icon: courseit,
-                    },
-                    {
-                        text: "Plataforma 5",
-                        link: "https://www.plataforma5.la/",
-                        icon: plat5,
-                    },
-                    {
-                        text: "Interaction Design Foundation",
-                        link: "https://www.interaction-design.org/",
-                        icon: idxf,
-                    },
-                    {
-                        text: "Boot.dev",
-                        link: "https://www.boot.dev/",
-                        icon: boot,
-                    },
-                ],
-            },
-        ],
+                {
+                    text: "Front End Masters",
+                    link: "https://frontendmasters.com/",
+                    icon: fem,
+                },
+                {
+                    text: "CourseIt (Rip)",
+                    link: "https://www.instagram.com/courseitok/?hl=es-la",
+                    icon: courseit,
+                },
+                {
+                    text: "Plataforma 5",
+                    link: "https://www.plataforma5.la/",
+                    icon: plat5,
+                },
+                {
+                    text: "Interaction Design Foundation",
+                    link: "https://www.interaction-design.org/",
+                    icon: idxf,
+                },
+                {
+                    text: "Boot.dev",
+                    link: "https://www.boot.dev/",
+                    icon: boot,
+                },
+            ],
+        },
     },
 ];
