@@ -2,26 +2,29 @@
 
 # English 
 
-With the goal in mind of expanding my work and knowlege horizons, I decided to create this webpage. I took this opportunity to utilize new and challenging techonlogies that I haven't used before.
-
-Some stuff featured in this webpage:
+Having the opportunity to do some coding, I've decided to add stuff I haven't worked with before.
 
 - Typescript!!
-- Vite + Shacn components
+- Vite + Shadcn components
 - Tailwind
-- maybe overengineer the backend stuff and add a db for paragraphs and images
+- Zod + React hook form
 
-Check the wip https://agusguevara.github.io/webrepo/
+Todo
+- host assets and text in backend 
 
 # Spanish
 
-Con la idea de expandir mis horizontes tanto laborales como de conocimientos, decidi crear esta web, donde aplique tecnologia que no utilice previamente y es nueva para mi!
-
-Cosas que se van a ver implementadas en esta pagina:
+Aprovechando que tengo la oportunidad de hacer algo de codigo fuera de lo laboral, aproveche y meti cosas que todavia no use
 
 - Typescript
 - Vite + componentes de Shadcn/Radix
 - Tailwindcss
-- talves meter una back y un db para parrafos e imagenes 
+- talves meter una back y un db para parrafos e imagenes
 
-Pegale un vistazo al wip https://agusguevara.github.io/webrepo/
+Todo
+- hostear assets y textos en backend
+
+# Visita la pagina aca
+
+agusguevara.github.io/website
+
