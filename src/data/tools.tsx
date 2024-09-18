@@ -19,7 +19,9 @@ import {
     SlackOriginal,
     PostmanOriginal,
     TypescriptOriginal,
-} from "devicons-react";
+    DockerOriginal,
+    PythonOriginal,
+} from 'devicons-react';
 
 interface nodes {
     toolname: string;
@@ -35,121 +37,131 @@ interface tool {
 
 export const tools: tool[] = [
     {
-        section: "frontEnd",
-        label: "Front End Tools",
+        section: 'frontEnd',
+        label: 'Front End Tools',
         nodes: [
             {
-                toolname: "Javascript",
+                toolname: 'Javascript',
                 toolcomponent: <JavascriptOriginal />,
-                experience: "Professional+ (4+/years)",
+                experience: 'Professional+ (4+/years)',
             },
             {
-                toolname: "Typescript",
+                toolname: 'Typescript',
                 toolcomponent: <TypescriptOriginal />,
-                experience: "Trainee/Jr (Months/exp)",
+                experience: 'Trainee/Jr (Months/exp)',
             },
             {
-                toolname: "Jquery",
+                toolname: 'Jquery',
                 toolcomponent: <JqueryOriginalWordmark />,
-                experience: "Proffessional (2+/years)",
+                experience: 'Proffessional (2+/years)',
             },
             {
-                toolname: "Html5",
+                toolname: 'Html5',
                 toolcomponent: <Html5Original />,
-                experience: "Professional+ (4+/years)",
+                experience: 'Professional+ (4+/years)',
             },
             {
-                toolname: "Css3",
+                toolname: 'Css3',
                 toolcomponent: <Css3Original />,
-                experience: "Professional+ (4+/years)",
+                experience: 'Professional+ (4+/years)',
             },
             {
-                toolname: "React",
+                toolname: 'React',
                 toolcomponent: <ReactOriginal />,
-                experience: "Professional+ (4+/years)",
+                experience: 'Professional+ (4+/years)',
             },
             {
-                toolname: "Redux",
+                toolname: 'Redux',
                 toolcomponent: <ReduxOriginal />,
-                experience: "Professional (2+/years)",
+                experience: 'Professional (2+/years)',
             },
             {
-                toolname: "Tailwindcss",
+                toolname: 'Tailwindcss',
                 toolcomponent: <TailwindcssOriginal />,
-                experience: "Trainee/Jr (Months/exp)",
+                experience: 'Trainee/Jr (Months/exp)',
             },
             {
-                toolname: "Sass",
+                toolname: 'Sass',
                 toolcomponent: <SassOriginal />,
-                experience: "Professional+ (4+/years)",
+                experience: 'Professional+ (4+/years)',
             },
             {
-                toolname: "Cypress.io",
+                toolname: 'Cypress.io',
                 toolcomponent: <CypressioLine />,
-                experience: "Junior (1/year)",
+                experience: 'Junior (1/year)',
             },
         ],
     },
     {
-        section: "backEnd",
-        label: "Back End Tools",
+        section: 'backEnd',
+        label: 'Back End Tools',
         nodes: [
             {
-                toolname: "Node.js",
+                toolname: 'Node.js',
                 toolcomponent: <NodejsOriginal />,
-                experience: "Junior (1/year)",
+                experience: 'Junior (1/year)',
             },
             {
-                toolname: "Express",
+                toolname: 'Express',
                 toolcomponent: <ExpressOriginal />,
-                experience: "Junior (1/year)",
+                experience: 'Junior (1/year)',
             },
             {
-                toolname: "Mongodb",
+                toolname: 'Mongodb',
                 toolcomponent: <MongodbOriginal />,
-                experience: "Trainee/Jr (Months/exp)",
+                experience: 'Trainee/Jr (Months/exp)',
             },
             {
-                toolname: "Postman",
+                toolname: 'Postman',
                 toolcomponent: <PostmanOriginal />,
-                experience: "Professional+ (4+/years)",
+                experience: 'Professional+ (4+/years)',
+            },
+            {
+                toolname: 'Python +Data science',
+                toolcomponent: <PythonOriginal />,
+                experience: 'Junior (-1/year)',
+            },
+            {
+                toolname: 'Docker',
+                toolcomponent: <DockerOriginal />,
+                experience: 'Junior (-1/year)',
             },
         ],
     },
 
     {
-        section: "devTools",
-        label: "Development Tools",
+        section: 'devTools',
+        label: 'Development Tools',
         nodes: [
             {
-                toolname: "Git",
+                toolname: 'Git',
                 toolcomponent: <GitOriginal />,
-                experience: "Professional+ (4+/years)",
+                experience: 'Professional+ (4+/years)',
             },
             {
-                toolname: "Github",
+                toolname: 'Github',
                 toolcomponent: <GithubOriginal />,
-                experience: "Professional+ (4+/years)",
+                experience: 'Professional+ (4+/years)',
             },
             {
-                toolname: "Gitlab",
+                toolname: 'Gitlab',
                 toolcomponent: <GitlabOriginal />,
-                experience: "Professional+ (4+/years)",
+                experience: 'Professional+ (4+/years)',
             },
             {
-                toolname: "Jira",
+                toolname: 'Jira',
                 toolcomponent: <JiraOriginal />,
-                experience: "Professional+ (4+/years)",
+                experience: 'Professional+ (4+/years)',
             },
             {
-                toolname: "Figma",
+                toolname: 'Figma',
                 toolcomponent: <FigmaOriginal />,
-                experience: "",
+                experience: '',
             },
             {
-                toolname: "Slack",
+                toolname: 'Slack',
                 toolcomponent: <SlackOriginal />,
-                experience: "",
+                experience: '',
             },
         ],
     },
